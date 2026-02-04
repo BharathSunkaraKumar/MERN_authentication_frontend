@@ -13,7 +13,7 @@ const Profile = () => {
     }
     const fetchProfile = async () => {
       try {
-        const resp = await fetch("http://localhost:3000/auth/profile", {
+        const resp = await fetch("https://mern-authentication-backend-1.onrender.com/auth/profile", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

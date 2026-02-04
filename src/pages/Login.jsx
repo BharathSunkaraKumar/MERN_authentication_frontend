@@ -20,7 +20,7 @@ const Login = () => {
     e.preventDefault();
     try {
       setLoading(true);
-      const resp = await fetch("http://localhost:3000/auth/login", {
+      const resp = await fetch("https://mern-authentication-backend-1.onrender.com/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

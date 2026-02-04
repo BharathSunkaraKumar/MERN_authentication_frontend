@@ -22,7 +22,7 @@ const Register = () => {
     e.preventDefault();
     try {
       setLoading(true);
-      const resp = await fetch("http://localhost:3000/auth/register", {
+      const resp = await fetch("https://mern-authentication-backend-1.onrender.com/auth/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

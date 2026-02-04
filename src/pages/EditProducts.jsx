@@ -32,7 +32,7 @@ const EditProducts = () => {
         console.log(dataToSend);
         try {
             setLoading(true);
-            const resp = await fetch(`http://localhost:3000/api/products/${id}`, {
+            const resp = await fetch(`https://mern-authentication-backend-1.onrender.com/api/products/${id}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",
@@ -58,7 +58,7 @@ const EditProducts = () => {
 
     useEffect(() => {
         const fetchProduct = async () => {
-            const resp = await fetch(`http://localhost:3000/api/products/${id}`);
+            const resp = await fetch(`https://mern-authentication-backend-1.onrender.com/api/products/${id}`);
             const data = await resp.json();
             // console.log(data.data)
 
@@ -115,7 +115,7 @@ const EditProducts = () => {
                             type="submit"
                             className="bg-black text-white w-full py-2 hover:bg-gray-900"
                         >
-                            {loading ? "Updating..." : "Update Product"}
+                            {loading ? "Modifying Details..." : "Update Product"}
                         </button>
                     </div>
                     <div>

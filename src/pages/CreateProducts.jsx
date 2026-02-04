@@ -27,7 +27,7 @@ const CreateProducts = () => {
     };
     try {
       setLoading(true);
-      const resp = await fetch("http://localhost:3000/api/products", {
+      const resp = await fetch("https://mern-authentication-backend-1.onrender.com/api/products", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

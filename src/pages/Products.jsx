@@ -26,7 +26,7 @@ const Products = () => {
 
   const handleDelete = async (id) => {
     try {
-      const resp = await fetch(`http://localhost:3000/api/products/${id}`, {
+      const resp = await fetch(`https://mern-authentication-backend-1.onrender.com/api/products/${id}`, {
         method: "DELETE",
       })
       if (!resp.ok) {
