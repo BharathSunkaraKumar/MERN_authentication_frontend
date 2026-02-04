@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Products = () => {
   const [products, setProducts] = useState(null);
   const [loading, setLoading] = useState(false);
-  const url = "http://localhost:3000/api/products";
+  const url = "https://mern-authentication-backend-1.onrender.com/api/products";
   const fetchProducts = async () => {
     try {
       setLoading(true);
